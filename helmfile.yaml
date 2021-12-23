@@ -1,0 +1,30 @@
+environments:
+  production:
+    values:
+    - production.yaml
+  staging:
+    values:
+    - staging.yaml
+---
+templates:
+  tpl-app: &app-bandung
+    name: app-bandung
+    namespace: bandung
+    createNamespace: true
+    chart: ./helmfile-charts/app-bandung
+    values:
+      - ./values/bandung-values.yaml
+    installed: {{ eq .Environment.Name "production" | toYaml }}
+
+releases:
+  - <<: *app-bandung
+  - name: app-jakarta
+    chart: ./helmfile-charts/app-jakarta
+    values:
+      - ./values/jakarta-values.yaml
+    installed: {{ eq .Environment.Name "production" | toYaml }}
+  - name: app-semarang
+    chart: ./helmfile-charts/app-semarang
+    values:
+      - ./values/semarang-values.yaml
+    installed: {{ eq .Values.releaseName "staging" | toYaml }}
