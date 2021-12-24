@@ -1,1 +1,2 @@
 argocd-helmfile-install.yaml
+argocd-deployment.yaml
