@@ -1,3 +1,13 @@
+repositories:
+- name: redis-bitnami
+  url: https://charts.bitnami.com/bitnami
+
+
 releases:
   - name: venus
     chart: ./venus
+  - name: redis 
+    namespace: redis 
+    version: 17.x.x
+    condition: redis.enabled               
+
