@@ -6,10 +6,10 @@ replicaCount: 3
 containerPort: 80
 
 image:
-  repository: proxy.ordivo.id/oo/library/nginx
+  repository: proxy.ordivo.id/oo/library/httpd
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.23"
+  tag: "2.2"
 
 imagePullSecrets: []
 nameOverride: ""
