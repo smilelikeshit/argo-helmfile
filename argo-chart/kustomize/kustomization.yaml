@@ -1,0 +1,24 @@
+
+
+namespace: default
+
+
+helmGlobals:
+  chartHome: charts
+
+# Bitnami NGINX helm chart
+helmChartInflationGenerator:
+- chartName: redis
+  chartRepoUrl: https://charts.bitnami.com/bitnami
+  chartVersion:  17.7.2
+  releaseName: redis
+  releaseNamespace: default
+  # override with these custom values
+  values: redis-values.yaml
+- chartName: mongodb
+  chartRepoUrl: https://charts.bitnami.com/bitnami
+  chartVersion:  13.0.0
+  releaseName: mongodb
+  releaseNamespace: default
+  # override with these custom values
+  values: mongodb-values.yaml

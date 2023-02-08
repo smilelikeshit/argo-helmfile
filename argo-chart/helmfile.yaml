@@ -1,0 +1,12 @@
+repositories:
+ - name: argo
+   url: https://argoproj.github.io/argo-helm
+
+releases:
+- name: {{ requiredEnv "ENV" }}
+  namespace: argocd-{{ requiredEnv "ENV" }}
+  chart: argo/argo-cd
+  version: 5.20.1
+  values:
+    - {{ requiredEnv "ENV" }}/values.yaml
+  installed: {{ requiredEnv "ENV" | eq "stg" }}
