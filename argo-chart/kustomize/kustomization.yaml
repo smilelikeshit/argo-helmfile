@@ -17,7 +17,7 @@ helmChartInflationGenerator:
   values: redis-values.yaml
 - chartName: mongodb
   chartRepoUrl: https://charts.bitnami.com/bitnami
-  chartVersion:  13.0.0
+  chartVersion:  13.6.7
   releaseName: mongodb
   releaseNamespace: default
   # override with these custom values
