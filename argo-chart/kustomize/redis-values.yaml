@@ -2,6 +2,6 @@ master:
   persistence:
     size: 1Gi
 replica: 
-  replicaCount: 1
+  replicaCount: 0
   persistence:
     size: 1Gi
