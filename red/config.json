@@ -1,10 +1,10 @@
 {
     "stg" : {
-        "name" : "blue",
+        "name" : "red",
         "env" : "stg"
     },
     "prod" : {
-        "name" : "blue",
+        "name" : "red",
         "env" : "prod"
     }
 }
