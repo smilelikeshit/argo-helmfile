@@ -10,6 +10,6 @@ releases:
     labels:
       app: nginx
     values:
-      - {{ requiredEnv "ENV"}}/values.yaml
+      - values.yaml
     installed: true
     createNamespace: true
