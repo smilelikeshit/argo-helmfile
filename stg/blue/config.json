@@ -1,0 +1,10 @@
+{
+    "stg" : {
+        "name" : "blue",
+        "env" : "stg"
+    },
+    "prod" : {
+        "name" : "blue",
+        "env" : "prod"
+    }
+}
