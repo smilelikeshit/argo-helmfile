@@ -4,12 +4,12 @@ repositories:
 
 releases:
   - chart: bitnami/nginx
-    name: {{ requiredEnv "APP_NAME" }}-nginx
-    namespace: {{ requiredEnv "ENV" }}
+    name: nginx
+    namespace: stg
     version: 14.1.1
     labels:
       app: nginx
     values:
-      - {{ requiredEnv "ENV" }}/values.yaml
+      - stg/values.yaml
     installed: true
     createNamespace: true
