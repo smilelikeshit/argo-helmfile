@@ -1,6 +1,6 @@
 {
     "cluster" : {
-        "app" : "blue",
+        "name" : "blue",
         "env" : "stg"
     }
 }
