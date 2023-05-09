@@ -1,6 +1,0 @@
-{
-    "cluster" : {
-        "name" : "red",
-        "env" : "prod"
-    }
-}

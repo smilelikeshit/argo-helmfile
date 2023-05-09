@@ -1,0 +1,15 @@
+repositories:
+  - name: bitnami 
+    url: https://charts.bitnami.com/bitnami
+
+releases:
+  - chart: bitnami/nginx
+    name: blue-{{ requiredEnv "APP_NAME" }}
+    namespace: {{ requiredEnv "ENV"}}
+    version: 14.1.1
+    labels:
+      app: nginx
+    values:
+      - {{ requiredEnv "ENV"}}/values.yaml
+    installed: true
+    createNamespace: true
