@@ -5,6 +5,6 @@
     },
     "prod" : {
         "name" : "blue",
-        "tier" : "prod"
+        "env" : "prod"
     }
 }
