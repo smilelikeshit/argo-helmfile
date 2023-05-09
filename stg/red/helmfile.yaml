@@ -8,7 +8,7 @@ releases:
     namespace: {{ requiredEnv "ENV" }}
     version: 14.1.1
     labels:
-      app: nginx
+      app: red
     values:
       - values.yaml
     installed: true
