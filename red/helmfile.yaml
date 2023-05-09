@@ -4,11 +4,11 @@ repositories:
 
 releases:
   - chart: bitnami/nginx
-    name: red-{{ requiredEnv "APP_NAME" }}
+    name: red-{{ requiredEnv "ENV" }}
     namespace: {{ requiredEnv "ENV"}}
     version: 14.1.1
     labels:
-      app: nginx
+      app: red
     values:
       - {{ requiredEnv "ENV"}}/values.yaml
     installed: true
