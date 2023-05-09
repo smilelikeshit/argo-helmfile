@@ -5,7 +5,7 @@ repositories:
 releases:
   - chart: bitnami/nginx
     name: {{ requiredEnv "APP_NAME" }}
-    namespace: stg
+    namespace: {{ requiredEnv "ENV"}}
     version: 14.1.1
     labels:
       app: nginx
