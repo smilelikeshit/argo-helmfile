@@ -1,8 +1,0 @@
-
-useStatefulSet: true 
-replicaCount: 1
-persistence:
-  size: 1Gi
-
-updateStrategy:
-  type: OnDelete

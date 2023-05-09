@@ -1,7 +1,0 @@
-master:
-  persistence:
-    size: 1Gi
-replica: 
-  replicaCount: 0
-  persistence:
-    size: 1Gi
